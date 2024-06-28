@@ -31,21 +31,21 @@ const Portfollio = () => {
   return (
     <section
       id="portfullio"
-      className="bg-gradient-to-tl py-[60px]"
+      className="bg-gradient-to-tl py-[50px]"
     >
       <div className=" border-[#8d44ad6b]">
         <div className="grid grid-cols-1 gap-8 xl:mt-12 xl:gap-12 lg:grid-cols-1">
           {portfolioItems.map((item, index) => (
-            <div key={index} className=" flex flex-col lg:flex-row gap-4">
+            <div key={index} className=" bg-[#eaeaea0c] rounded-md p-3 flex flex-col lg:flex-row gap-4">
             <div
               className="portfolio-card  flex w-full lg:w-[65%] items-end  overflow-hidden bg-cover rounded-lg h-[300px] lg:h-96"
               style={{ backgroundImage: `url(${item.imageUrl})` }}
             >
             </div>
             <div className=" flex-1 space-y-4 lg:space-y-6 p-4">
-            <h2  className=" text-2xl">{item.title}</h2>
+            <h2  className=" text-xl lg:text-2xl">{item.title}</h2>
             <div className=" space-y-4">
-            <h3>Technology Used</h3>
+            <h3 className="inline-block border-b-2 border-green-400">Technology Used</h3>
             <div className=" flex flex-wrap gap-2 *:text-[12px]">
             <button className="btn btn-sm">Tailwind</button>
             <button className="btn btn-sm">TailwindDaisyUI & Mamba UI</button>
@@ -54,6 +54,12 @@ const Portfollio = () => {
             <button className="btn btn-sm">Node js</button>
             <button className="btn btn-sm">Express Js</button>
             <button className="btn btn-sm">Mongodb</button>
+            </div>
+            <div  className=" w-28 flex items-center">
+            <button className=" btn btn-sm w-full rounded-none btn-outline">Details</button>
+            <button className=" btn btn-sm w-full rounded-none btn-outline"><a target=" " href={item.liveLink}>View</a></button>
+            <button className=" btn btn-sm w-full rounded-none btn-outline">Code</button>
+            
             </div>
             </div>
             </div>

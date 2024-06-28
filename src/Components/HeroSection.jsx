@@ -9,25 +9,25 @@ import Photo from "./Photo";
 import Stats from "./Stats";
 const HeroSection = () => {
   return (
-    <div className="max-w-7xl w-[90%] pb-4 flex flex-col justify-around items-center   min-h-[calc(100vh-56px-50px)] md:pt-16 pt-6 mx-auto">
-      <div className="flex lg:flex-row flex-col-reverse  lg:6  justify-between">
+    <div className="max-w-7xl w-[90%] pb-4 flex flex-col justify-around items-center   min-h-[calc(100vh-56px-50px)] md:pt-12 pt-6 mx-auto">
+      <div className="flex lg:flex-row flex-col-reverse  lg:gap-0 gap-4  justify-between">
         <div className="w-full lg:w-[60%]">
           <div className="space-y-4 lg:text-left text-center">
            <h1>J.r Front-End Developer| </h1>
-            <h2 className="text-3xl  font-semibold lg:text-5xl">
+            <h2 className="text-3xl  font-semibold lg:text-4xl">
             HI, I`m <br />Md Mydul Islam. <br />  
 
             </h2>
 
-            <p className="mt-3 ">
+            <p className=" ">
             Passionate MERN Stack Developer | Transforming ideas into seamless and visually stunning web solutions. Skilled in teamwork and collaboration to achieve exceptional results.
             </p>
 
             <div className="flex  gap-6">
-            <button className="w-full px-6 py-3 mt-6 text-sm tracking-wider  uppercase transition-colors duration-300 transform  rounded-lg lg:w-auto border-2 border-[#149cca]  hover:bg-transparent bg-[#149cca]">
+            <button className="w-full px-6 py-2  text-sm tracking-wider  uppercase transition-colors duration-300 transform  rounded-lg lg:w-auto border-2 border-[#149cca]  hover:bg-transparent bg-[#149cca]">
               Contact me
             </button>
-            <button className="w-full px-6 py-3 mt-6 text-sm tracking-wider hover:bg-[#149cca] hover:border-[#149cca]  uppercase transition-colors duration-300 transform border-2  rounded-lg lg:w-auto focus:outline-none ">
+            <button className="w-full px-6 py-2  text-sm tracking-wider hover:bg-[#149cca] hover:border-[#149cca]  uppercase transition-colors duration-300 transform border-2  rounded-lg lg:w-auto focus:outline-none ">
             <a href="resume_mydul.pdf" className=" flex justify-center items-center gap-2" download={'mydul islam'}>Download Resume<IoDownloadOutline size={15} />
             </a>
             </button>

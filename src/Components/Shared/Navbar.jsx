@@ -37,6 +37,10 @@ const Navbar = () => {
              path:'/aboutme',
              listName: 'AboutMe'
              },
+             {
+             path:'/contactme',
+             listName: 'ContactMe'
+             },
   ]
   return (
     <nav className="relative bg-[#149cca] shadow">

@@ -25,9 +25,10 @@ const Stats = () => {
   return (
     <section>
       <div className="w-full ">
-        <div className="flex gap-20 pt-12 justify-between">
+        <div className="grid grid-cols-2 lg:grid-cols-4 py-8 gap-8 lg:gap-16  justify-between">
+
           {stats.map((item, index) => (
-            <div key={index} className="text-center">
+            <div key={index} className="text-center flex flex-col items-center justify-center">
              <div className=' flex justify-center items-center'>
              <CountUp 
                 end={item.num} 
@@ -36,7 +37,7 @@ const Stats = () => {
                 className="text-3xl xl:text-5xl font-extrabold"
               ></CountUp><span className=' text-4xl'>+</span>
              </div>
-              <p className="mt-2 text-lg">{item.text}</p>
+              <p className="mt-2 text-sm lg:text-lg">{item.text}</p>
             </div>
           ))}
         </div>
