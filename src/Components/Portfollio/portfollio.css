@@ -1,0 +1,19 @@
+.portfolio-card {
+  background-size: cover;
+  background-position: top;
+  transition: background-position 0.2s ease-in-out;
+}
+
+.portfolio-card:hover {
+  background-position: top;
+  animation: scrollBackground 7s linear forwards;
+}
+
+@keyframes scrollBackground {
+  from {
+    background-position: top;
+  }
+  to {
+    background-position: bottom;
+  }
+}
