@@ -1,6 +1,5 @@
-import Aboutnav from "@/Components/aboutnav";
 import Image from "next/image";
-
+import Aboutnav from "@/Components/Aboutnav";
 
 
 export default function layout({ children }) {
