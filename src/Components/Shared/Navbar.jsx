@@ -105,7 +105,7 @@ const Navbar = () => {
       }
         </div>
         <div className=' mr-3'>
-       <Link href={'/contactme'}> <button className='btn border-none btn-sm  bg-green-500  rounded-xl' >
+       <Link  href={'/contactme'}> <button onClick={() => setIsOpen(!isOpen)}  className='btn border-none btn-sm  bg-green-500  rounded-xl' >
            Hire Me
           </button></Link>
         </div>
