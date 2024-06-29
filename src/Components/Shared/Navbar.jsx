@@ -91,23 +91,23 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`absolute inset-x-0 z-20 w-full items-center px-6 py-4 transition-all duration-300 ease-in-out bg-white md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:flex md:items-center ${
+        className={`absolute inset-x-0  w-full items-center px-6 py-4 transition-all duration-300 ease-in-out md:h-full h-screen z-50  bg-[#0d7c92] md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:flex md:items-center ${
           isOpen ? 'translate-x-0 opacity-100' : ' opacity-0 md:opacity-100 -translate-x-full md:translate-x-0'
         }`} 
       >
         <div className="flex flex-col md:flex-row md:mx-6">
         {
         navpath && navpath.map(nav=>(
-          <Link key={nav.path} href={`${nav.path}`} className={`my-2   md:mx-4 md:my-0 ${pathname ===nav.path && "border-b-2  border-green-400 rounded-md"}`}>
-          {nav.listName}
+          <Link onClick={() => setIsOpen(!isOpen)}  key={nav.path} href={`${nav.path}`} className={`my-2   md:mx-4 md:my-0 ${pathname ===nav.path && "border-b-2  border-green-400 rounded-md"}`}>
+         <button > {nav.listName}</button>
         </Link>
         ))
       }
         </div>
         <div className=' mr-3'>
-        <button className='btn btn-sm  bg-green-500  rounded-xl' onClick={toggleTheme}>
+       <Link href={'/contactme'}> <button className='btn border-none btn-sm  bg-green-500  rounded-xl' >
            Hire Me
-          </button>
+          </button></Link>
         </div>
 
         <div className="flex justify-center items-center gap-2 ">

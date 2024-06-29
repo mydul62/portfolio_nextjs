@@ -7,6 +7,7 @@ import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Photo from "./Photo";
 import Stats from "./Stats";
+import Link from "next/link";
 const HeroSection = () => {
   return (
     <div className="max-w-7xl w-[90%] pb-4 flex flex-col justify-around items-center   min-h-[calc(100vh-56px-50px)] md:pt-12 pt-6 mx-auto">
@@ -24,9 +25,9 @@ const HeroSection = () => {
             </p>
 
             <div className="flex  gap-6">
-            <button className="w-full px-6 py-2  text-sm tracking-wider  uppercase transition-colors duration-300 transform  rounded-lg lg:w-auto border-2 border-[#149cca]  hover:bg-transparent bg-[#149cca]">
+           <Link href={'/contactme'}> <button className="w-full px-6 py-2  text-sm tracking-wider  uppercase transition-colors duration-300 transform  rounded-lg lg:w-auto border-2 border-[#149cca]  hover:bg-transparent bg-[#149cca]">
               Contact me
-            </button>
+            </button></Link>
             <button className="w-full px-6 py-2  text-sm tracking-wider hover:bg-[#149cca] hover:border-[#149cca]  uppercase transition-colors duration-300 transform border-2  rounded-lg lg:w-auto focus:outline-none ">
             <a href="resume_mydul.pdf" className=" flex justify-center items-center gap-2" download={'mydul islam'}>Download Resume<IoDownloadOutline size={15} />
             </a>

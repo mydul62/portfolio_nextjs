@@ -5,38 +5,38 @@ const Portfollio = () => {
     {
       title: "Diagnostic center management",
       liveLink: "https://labratory.netlify.app",
-      codeLink: "https://github.com/programming-hero-web-course1/b9a12-client-side-mydul62",
-      imageUrl: "https://i.ibb.co/S05DsKG/labratory-netlify-app.png"
+      CodeLink: "https://github.com/mydul62/labratory",
+      imageUrl: "https://i.ibb.co/dLq7JjM/rsz-5labratorynetlifyapp.png"
     },
     {
       title: "Electronic gadget repaire center",
       liveLink: " https://repaireranger.netlify.app",
       codeLink: "https://github.com/Porgramming-Hero-web-course/b9a11-client-side-mydul62",
-      imageUrl: "https://i.ibb.co/QfQcTkf/repaireranger-netlify-app-1.png"
+      imageUrl: "https://i.ibb.co/74DtBN2/rsz-2repairerangernetlifyapp-1.png"
     },
     {
       title: "Tourism management website",
       liveLink: "https://citytour-web.netlify.app",
       CodeLink: " https://github.com/programming-hero-web-course-4/B9A10-client-side-mydul62",
-      imageUrl: "https://i.ibb.co/6PqF56N/citytour-web-netlify-app.png"
+      imageUrl: "https://i.ibb.co/dMHZP99/rsz-citytour-webnetlifyapp.png"
     },
     {
       title: "Residential selling website",
       liveLink:"https://homehaven-auth.web.app/",
       CodeLink: " https://github.com/programming-hero-web-course-4/b9a9-real-estate-mydul62",
-      imageUrl: "https://i.ibb.co/hXvFFTZ/homehaven-auth-web-app.png"
+      imageUrl: "https://i.ibb.co/wzptfRB/rsz-homehaven-authwebapp.png"
     }
   ];
 
   return (
     <section
       id="portfullio"
-      className="bg-gradient-to-tl py-[50px]"
+      className="bg-gradient-to-tl "
     >
       <div className=" border-[#8d44ad6b]">
-        <div className="grid grid-cols-1 gap-8 xl:mt-12 xl:gap-12 lg:grid-cols-1">
+        <div className="grid grid-cols-1 gap-8 md:mt-0 mt-12 xl:mt-12 xl:gap-12 lg:grid-cols-1">
           {portfolioItems.map((item, index) => (
-            <div key={index} className=" bg-[#eaeaea0c] rounded-md p-3 flex flex-col lg:flex-row gap-4">
+            <div key={index} className=" bg-[#eaeaea0c] rounded-md  flex flex-col lg:flex-row gap-4">
             <div
               className="portfolio-card  flex w-full lg:w-[65%] items-end  overflow-hidden bg-cover rounded-lg h-[300px] lg:h-96"
               style={{ backgroundImage: `url(${item.imageUrl})` }}
@@ -55,11 +55,10 @@ const Portfollio = () => {
             <button className="btn btn-sm">Express Js</button>
             <button className="btn btn-sm">Mongodb</button>
             </div>
-            <div  className=" w-28 flex items-center">
+            <div  className=" w-20 lg:w-28 flex items-center">
             <button className=" btn btn-sm w-full rounded-none btn-outline">Details</button>
             <button className=" btn btn-sm w-full rounded-none btn-outline"><a target=" " href={item.liveLink}>View</a></button>
-            <button className=" btn btn-sm w-full rounded-none btn-outline">Code</button>
-            
+            <button className=" btn btn-sm w-full rounded-none btn-outline"><a href={item?.CodeLink} target=" ">Code</a></button>
             </div>
             </div>
             </div>
