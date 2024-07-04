@@ -43,23 +43,23 @@ const Portfollio = () => {
             >
             </div>
             <div className=" flex-1 space-y-4 lg:space-y-6 p-4">
-            <h2  className=" text-xl lg:text-2xl">{item.title}</h2>
+            <h2  className=" text-lg lg:text-2xl">{item.title}</h2>
             <div className=" space-y-4">
-            <h3 className="inline-block border-b-2 border-green-400">Technology Used</h3>
-            <div className=" flex flex-wrap gap-2 *:text-[12px]">
-            <button className="btn btn-sm">Tailwind</button>
+            <h3 className="inline-block border-b-2 text-[16px] border-green-400">Technology Used</h3>
+            <div className=" flex flex-wrap gap-2 *:text-[8px]">
             <button className="btn btn-sm">TailwindDaisyUI & Mamba UI</button>
-            <button className="btn btn-sm">React router dom</button>
-            <button className="btn btn-sm">Firebase</button>
             <button className="btn btn-sm">Node js</button>
             <button className="btn btn-sm">Express Js</button>
             <button className="btn btn-sm">Mongodb</button>
+            <button className="btn btn-sm">Tailwind</button>
+            <button className="btn btn-sm">React router dom</button>
+            <button className="btn btn-sm">Firebase</button>
             </div>
-            <div  className=" w-20 lg:w-28 flex items-center">
+            <div  className=" w-24  lg:w-28 flex items-center">
             <button className=" btn btn-sm w-full rounded-none btn-outline">Details</button>
             <button className=" btn btn-sm w-full rounded-none btn-outline"><a target=" " href={item.liveLink}>View</a></button>
             <button className=" btn btn-sm w-full rounded-none btn-outline"><a href={item?.CodeLink} target=" ">Code</a></button>
-            </div>
+            </div> 
             </div>
             </div>
             </div>

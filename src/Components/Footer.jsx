@@ -9,7 +9,7 @@ const Footer = () => {
           <h2>Mydul Islam</h2>
         </a>
 
-        <p className="text-sm  ">© Copyright 2024. All Rights Reserved by Mydul.</p>
+        <p className=" text-[10px] lg:text-sm  ">© Copyright 2024. All Rights Reserved by Mydul.</p>
 
         <div className="flex -mx-2">
           <a

@@ -21,12 +21,12 @@ const Aboutnav = () => {
   const pathname = usePathname();
 
   return (
-    <div className="flex justify-around gap-2 lg:gap-3 border-2 w-[80%] rounded-full mt-16 items-center">
+    <div className="flex justify-around gap-2 lg:gap-3 border-2 w-full md::w-[80%] rounded-full mt-16 items-center">
       {navlist.map((item, index) => (
         <Link
           key={index}
           href={item.path}
-          className={`py-2 px-2 rounded-full ${
+          className={`md:py-2 py-1 px-2 rounded-full ${
             pathname === item.path ? "bg-green-700" : "bg-transparent"
           }`}
         >

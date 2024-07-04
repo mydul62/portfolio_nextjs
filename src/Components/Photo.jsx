@@ -11,7 +11,7 @@ const Photo = () => {
         opacity: 1,
         transition: { delay: 2, duration: 0.4, ease: "easeIn" },
       }}
-      className=" flex items-center justify-center lg:justify-end w-full mt-6 lg:mt-0"
+      className=" flex items-center justify-center lg:justify-end w-full  lg:mt-0"
     >
       <motion.div
         initial={{ opacity: 1 }}
@@ -22,7 +22,7 @@ const Photo = () => {
         className="relative"
       >
         <Image
-          className="rounded-full  shadow-2xl shadow-green-300  "
+          className="rounded-full  shadow-2xl shadow-green-300"
           src="/mahim.png"
           alt="Picture of the author"
           priority

@@ -34,7 +34,7 @@ const Stats = () => {
                 end={item.num} 
                 duration={5} 
                 delay={2} 
-                className="text-3xl xl:text-5xl font-extrabold"
+                className="text-[26px] xl:text-5xl font-extrabold"
               ></CountUp><span className=' text-4xl'>+</span>
              </div>
               <p className="mt-2 text-sm lg:text-lg">{item.text}</p>
