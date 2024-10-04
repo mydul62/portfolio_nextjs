@@ -22,14 +22,14 @@ const HeroSection = () => {
       <div className="weve flex lg:flex-row flex-col-reverse  lg:gap-0 gap-4  justify-between">
         <div className="w-full lg:w-[60%]">
           <div className="space-y-4 lg:text-left text-center">
-           <h1>J.r Front-End Developer| </h1>
+           <h1>Web Developer | React js Developer | Wordpress Designer</h1>
             <h2 className="text-2xl  font-semibold lg:text-4xl">
             HI, I`m <br />Md Mydul Islam. <br />  
 
             </h2>
 
             <p className=" text-[13px] md:text-xl ">
-            Passionate MERN Stack Developer | Transforming ideas into seamless and visually stunning web solutions. Skilled in teamwork and collaboration to achieve exceptional results.
+            Passionate <span className="underline underline-offset-4 hover:font-black hover:text-green-500">MERN Stack</span> Developer | Transforming ideas into seamless and visually stunning web solutions. Skilled in teamwork and collaboration to achieve exceptional results.
             </p>
 
             <div className="flex  gap-6">
